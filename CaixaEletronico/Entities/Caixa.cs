@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CaixaEletronico.Entities
 {
-    internal class Caixa
+    internal class Caixa : Entity
     {
         private readonly ListaDeSaques _listaDeSaques;
 

@@ -18,12 +18,16 @@ namespace CaixaEletronico
                 PrintMoedas(caixa.Sacar(2000));
                 PrintMoedas(caixa.Sacar(2050));
                 PrintMoedas(caixa.Sacar(1430));
-                Console.WriteLine("=============================");
-                listaDeSaques.Print();
+                PrintMoedas(caixa.Sacar(1431));
             }
             catch (InvalidOperationException)
             {
                 Console.WriteLine("valor inválido");
+            }
+            finally
+            {
+                Console.WriteLine("=============================");
+                listaDeSaques.Print();
             }
 
             Console.ReadKey();
